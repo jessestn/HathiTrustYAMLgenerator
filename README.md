@@ -16,12 +16,11 @@ The purpose of adapting the Python script and documentation from the GitHub repo
 
 ### Next: [How to record item information in a spreadsheet and process this information to generate YAML files](HowTo.md).
 
+
 Bug fixes:
 This is a modified csv-to-yml.py script that makes several fixes.
 
-1.
-It makes sure that the times in "Scan Time HH:MM" field in the csv have been properly entered. Sometimes Excel will strip the leading zero on 24hr times. Example: 08:45 will be exported as 8:45. This will cause the Hathi ingest to reject the YML file in the SIP. The Hathi SIP Validator does not catch this error. 
+1. It makes sure that the times in "Scan Time HH:MM" field in the csv have been properly entered. Sometimes Excel will strip the leading zero on 24hr times. Example: 08:45 will be exported as 8:45. This will cause the Hathi ingest to reject the YML file in the SIP. The Hathi SIP Validator does not catch this error. 
 The script now fixes times that are not properly formated but properly formated times or times with correct 4 digits (11:45) will be left alone. 
 
-2.
-Instead of asking for the paths of the csv file and destination path for the generated YML files, the user adds the csv file location to the command line arguments and the YML files are automatically placed in that same folder. 
+2. Instead of asking for the paths of the csv file and destination path for the generated YML files, the user adds the csv file location to the command line arguments and the YML files are automatically placed in that same folder. 
