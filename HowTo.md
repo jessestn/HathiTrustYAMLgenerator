@@ -58,10 +58,10 @@ Much of the documentation below has been taken directly from the **[Field Guide]
 | BACK_COVER | [HTEYF](https://drive.google.com/file/d/0B0EHs5JWGUMLWjU2OHVhQzN5WEk/view): "Image of the back cover" |
   
 ## Generating a YAML file for upload
-- Download the sheet with input values in CSV format.
-- Open the [Python script](csv-to-yml.py).
-- Input the filepath, including filename, of the saved CSV file.
-- Input the filepath where output YAML files should be saved.
+- Edit the csv template sheet with your pagetag data and make sure it is saved in CSV format.
+- Run the [Python script](csv-to-yml.py) from the command line, using the full path\filename.csv of the csv file as an argument.
+-   Example command line: python csv-to-yml.py c:\temp\filename.csv
+- The script will output the YML files in the same folder as the csv file. 
 - Confirm generated YAML file output.
 
 ### Note:  
